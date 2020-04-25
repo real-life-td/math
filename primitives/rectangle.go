@@ -26,6 +26,10 @@ func NewRectangle(x1, y1, x2, y2 int) *Rectangle {
 	return r
 }
 
+func RectangleFromPoints(p1, p2 *Point) *Rectangle {
+	return NewRectangle(p1.x, p1.y, p2.x, p2.y)
+}
+
 // The least x-value of the rectangle
 func (r *Rectangle) X1() int {
 	return r.x1
