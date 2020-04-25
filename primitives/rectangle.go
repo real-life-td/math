@@ -65,5 +65,5 @@ func (r *Rectangle) ContainsPoint(p *Point) bool {
 // Creates a new rectangle that has been expanded by the given amounts. All values will create a bigger rectangle in
 // their respective direction when given a positive value and a smaller rectangle when given a negative value
 func (r *Rectangle) Expand(left, up, right, down int) *Rectangle {
-	return NewRectangle(r.x1 - left, r.y1 - up, r.x2 + right, r.y2 + down)
+	return NewRectangle(r.x1-left, r.y1-up, r.x2+right, r.y2+down)
 }

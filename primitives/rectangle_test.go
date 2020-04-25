@@ -56,6 +56,6 @@ func TestRectangle_ContainsPoint(t *testing.T) {
 
 func TestRectangle_Expand(t *testing.T) {
 	r := NewRectangle(-1, -1, 1, 1)
-	r2 := r.Expand(1, 2, 3 ,4)
+	r2 := r.Expand(1, 2, 3, 4)
 	require.Equal(t, NewRectangle(-2, -3, 4, 5), r2)
 }
