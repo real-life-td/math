@@ -6,7 +6,7 @@ type Rectangle struct {
 
 func NewRectangle(x1, y1, x2, y2 int) *Rectangle {
 	r := new(Rectangle)
-	
+
 	if x1 > x2 {
 		r.x1 = x2
 		r.x2 = x1
@@ -22,7 +22,7 @@ func NewRectangle(x1, y1, x2, y2 int) *Rectangle {
 		r.y1 = y1
 		r.y2 = y2
 	}
-	
+
 	return r
 }
 
