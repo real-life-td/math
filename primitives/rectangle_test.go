@@ -19,6 +19,14 @@ func TestNewRectangle(t *testing.T) {
 	require.Equal(t, 3, r.Y2(), "should auto-sort least a greatest coordinates")
 }
 
+func TestRectangleFromPoints(t *testing.T) {
+	r := RectangleFromPoints(NewPoint(1, 2), NewPoint(3, 4))
+	require.Equal(t, r.X1(), 1)
+	require.Equal(t, r.Y1(), 2)
+	require.Equal(t, r.X2(), 3)
+	require.Equal(t, r.Y2(), 4)
+}
+
 func TestRectangle_Width(t *testing.T) {
 	r := NewRectangle(0, 0, 3, 4)
 	require.Equal(t, 3, r.Width())
