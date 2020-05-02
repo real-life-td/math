@@ -26,23 +26,23 @@ func (p *Point) InRectangle(r *Rectangle) bool {
 }
 
 func (p *Point) Dot(p2 *Point) int {
-	return p.x * p2.x + p.y * p2.y
+	return p.x*p2.x + p.y*p2.y
 }
 
 func (p *Point) Cross(p2 *Point) int {
-	return p.x * p2.y + p.y * p2.x
+	return p.x*p2.y + p.y*p2.x
 }
 
 func (p *Point) Add(p2 *Point) *Point {
-	return NewPoint(p.x + p2.x, p.y + p2.y)
+	return NewPoint(p.x+p2.x, p.y+p2.y)
 }
 
 func (p *Point) Subtract(p2 *Point) *Point {
-	return NewPoint(p.x - p2.x, p.y - p2.y)
+	return NewPoint(p.x-p2.x, p.y-p2.y)
 }
 
 func (p *Point) Multiply(scalar int) *Point {
-	return NewPoint(p.x * scalar, p.y * scalar)
+	return NewPoint(p.x*scalar, p.y*scalar)
 }
 
 func (p *Point) MultiplyF(scalar float64) *Point {

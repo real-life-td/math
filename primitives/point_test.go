@@ -78,8 +78,8 @@ func TestPoint_MultiplyF(t *testing.T) {
 	require.Equal(t, NewPoint(-1, -2), p.MultiplyF(-(2.0 / 3.0)))
 	require.Equal(t, NewPoint(-1, -1), p.MultiplyF(-(1.0 / 3.0)))
 	require.Equal(t, NewPoint(0, 0), p.MultiplyF(0.0))
-	require.Equal(t, NewPoint(1, 1), p.MultiplyF(1.0 / 3.0))
-	require.Equal(t, NewPoint(1, 2), p.MultiplyF(2.0 / 3.0))
+	require.Equal(t, NewPoint(1, 1), p.MultiplyF(1.0/3.0))
+	require.Equal(t, NewPoint(1, 2), p.MultiplyF(2.0/3.0))
 	require.Equal(t, NewPoint(2, 3), p.MultiplyF(1.0))
 	require.Equal(t, NewPoint(4, 6), p.MultiplyF(2.0))
 }
