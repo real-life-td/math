@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// Algorithm from https://math.stackexchange.com/a/2193733
 func ClosestPointTo(linePoint1, linePoint2, p *primitives.Point) (closest *primitives.Point, distance float64) {
 	v := linePoint2.Subtract(linePoint1)
 	u := linePoint1.Subtract(p)
